@@ -2,15 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "website",
+    "title": "Jack Liu",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "{Width= 150px}\nHi, I am Jack Liu, a current UBC MDS student for the 2026/27 semester. I graduated in 2024 from UBC with a Bachelor’s of Science in Sustainable Agriculture. For the past year and half, I have been working as a receiver at Sungiven Foods (White Rock). I hope that through the UBC MDS program, I will be able to gain a comprehensive skillset of data analysis to pursue career as a data analyst in the future."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "My name is Jack Liu, and I am a 2024 UBC graduate with a Bachelor of Science in Sustainable Agriculture. Originally from Fredericton, New Brunsick, I moved to Vancouver at 18 to come to UBC. Prior to coming to the UBC MDS program, I have been working for a year and half at Sungiven Foods (White Rock) as a Store Receiver."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "My name is Jack Liu, and I am a 2024 UBC graduate with a Bachelor of Science in Sustainable Agriculture. Originally from Fredericton, New Brunsick, I moved to Vancouver at 18 to come to UBC. Prior to coming to the UBC MDS program, I have been working for a year and half at Sungiven Foods (White Rock) as a Store Receiver."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nI became interested in Data Science toward the end of my bachelor’s degree. I have always enjoyed working with numbers, analyzing problems, and finding solutions that support better decision-making. During my work as a Receiver, I gained experience with data entry, inventory tracking, and records management. However, this made me realize that I wanted to do more than simply manage data. I wanted to use data to analyze problems and support decision-making, however I did not yet have the qualifications. This motivated me to enroll in UBC’s MDS program, which will allow me to develop the technical skills needed for a career in data analysis. The accelerated 10-month format also fits well with my goal of transitioning into the field quickly."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nI am an avid fan of football, especially the English Premier League. My favorite team is Chelsea FC. I am also a huge foodie, and I enjoy exploring various restaurants in Vancouver with diverse cuisines. My favorite food is Donair."
   }
 ]

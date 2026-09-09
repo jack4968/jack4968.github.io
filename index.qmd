@@ -1,7 +1,9 @@
 ---
-title: "website"
+title: "Jack Liu"
 ---
+![](images/jack_liu_photo.jpg){Width= 150px}
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi, I am Jack Liu, a current UBC MDS student for the 2026/27 semester. 
+I graduated in 2024 from UBC with a Bachelor's of Science in Sustainable Agriculture. 
+For the past year and half, I have been working as a receiver at Sungiven Foods (White Rock). 
+I hope that through the UBC MDS program, I will be able to gain a comprehensive skillset of data analysis to pursue career as a data analyst in the future.
