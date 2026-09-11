@@ -4,7 +4,7 @@ project:
 
 
 website:
-  title: "Your Name"
+  title: "Jack Liu"
   navbar:
     left:
       - href: index.qmd
