@@ -1,0 +1,13 @@
+---
+title: "My first weeks in MDS"
+author: "Jack Liu"
+date: 2026-09-10
+---
+My first week in MDS was quite the experience. Orientation was exciting but tiring, especially because of my commute. My first week of classes was honestly brutal. Since I don't have a background in data science, learning all the new software while keeping up with all the homework every week has been a huge adjustment.
+
+Now I am feeling very overwhelmed, especially with midterms already coming up. Waking up for my 8am classes has also been a challenge. However, even though it has been stressful, I have really enjoyed the grind and the experience so far.
+
+ I'm slowly getting more comfortable with everything and looking forward to seeing how much I can improve, but midterm week is coming up next.
+
+![Orientation day on campus.](orientation.jpg)
+

@@ -8,8 +8,8 @@ Prior to coming to the UBC MDS program, I have been working for a year and half 
 
 ## Why Data Science
 I became interested in Data Science toward the end of my bachelor’s degree. I have always enjoyed working with numbers, analyzing problems, and finding solutions that support better decision-making.
-During my work as a Receiver, I gained experience with data entry, inventory tracking, and records management. However, this made me realize that I wanted to do more than simply manage data. I wanted to use data to analyze problems and support decision-making, however I did not yet have the qualifications.
-This motivated me to enroll in UBC’s MDS program, which will allow me to develop the technical skills needed for a career in data analysis. The accelerated 10-month format also fits well with my goal of transitioning into the field quickly.
+During my work as a Receiver, I gained experience with data entry, inventory tracking, and records management. However, this made me realize that I wanted to do more than simply manage data, and I wanted to use data to analyze problems and support decision-making.
+Thus, I enrolled in the UBC MDS program, where I hope to develop the technical skills needed for a career in data analysis. The accelerated 10-month format also fits well with my goal of transitioning into the field quickly.
 
 ## Outside of Data Science
 I am an avid fan of football, especially the English Premier League. My favorite team is Chelsea FC. I am also a huge foodie, and I enjoy exploring various restaurants in Vancouver with diverse cuisines. My favorite food is Donair.
