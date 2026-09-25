@@ -1,0 +1,45 @@
+---
+title: "R Analysis"
+author: "Jack Liu"
+date: 2026-09-24
+---
+The Palmer Penguins dataset contains measurements of penguins from
+three species collected in the Palmer Archipelago of Antarctica.
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/).
+The data are available under a **CC0 (No Rights Reserved)** license.
+
+## Looking at the data
+First, I looked at the first few rows of the dataset to understand what variables are available.
+```{r}
+#| message: false
+#| warning: false
+library(palmerpenguins)
+library(tidyverse)
+penguins |>
+  head()
+```
+
+## Number of penguins by species
+Next, I counted the penguins by species
+```{r}
+species_counts <- penguins |>
+  count(species, sort = TRUE)
+
+species_counts
+```
+
+The results show that Adelie penguins have the most observations in the dataset, followed by Gentoo and Chinstrap penguins.
+
+## Average body mass by species
+Then, I looked into average body mass of penguins by species
+```{r}
+average_mass <- penguins |>
+  group_by(species) |>
+  summarise(average_body_mass = mean(body_mass_g, na.rm = TRUE)) |>
+  arrange(desc(average_body_mass))
+
+average_mass
+```
+
+Gentoo penguins have the highest average body mass, while Adelie penguins have the lowest average body mass.

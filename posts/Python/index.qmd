@@ -1,0 +1,41 @@
+---
+title: "Python Analysis"
+author: "Jack Liu"
+date: 2026-09-22
+jupyter: python3
+---
+The Palmer Penguins dataset contains measurements of penguins from
+three species collected in the Palmer Archipelago of Antarctica.
+
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/).
+The data are available under a **CC0 (No Rights Reserved)** license.
+
+## Looking at the data
+First, I looked at the first few rows of the dataset to understand what variables are available.
+```{python}
+#| message: false
+#| warning: false
+from palmerpenguins import load_penguins
+penguins= load_penguins()
+penguins.head()
+```
+
+## Number of penguins by species
+Next, I counted the penguins by species
+```{python}
+species_counts = penguins["species"].value_counts()
+species_counts
+```
+
+The results show that Adelie penguins have the most observations in the dataset, followed by Gentoo and Chinstrap penguins.
+
+## Average body mass by species
+Then, I looked into average body mass of penguins by species
+```{python}
+average_mass = (
+    penguins.groupby("species")["body_mass_g"]
+    .mean().sort_values(ascending= False).reset_index())
+average_mass
+```
+
+Gentoo penguins have the highest average body mass, while Adelie penguins have the lowest average body mass.
