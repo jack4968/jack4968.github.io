@@ -23,6 +23,7 @@ Set up the Python environment with git bash by running:
 uv sync
 
 For the R environment, open R from the project folder and run:
+source("renv/activate.R"), then run:
 renv::restore()
 
 Once the environments are set up, render the website from the project folder in git bash with:
