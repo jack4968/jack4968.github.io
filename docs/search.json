@@ -7,6 +7,27 @@
     "text": "The Palmer Penguins dataset contains measurements of penguins from three species collected in the Palmer Archipelago of Antarctica.\nData: Palmer Penguins. The data are available under a CC0 (No Rights Reserved) license."
   },
   {
+    "objectID": "posts/R/index.html#looking-at-the-data",
+    "href": "posts/R/index.html#looking-at-the-data",
+    "title": "R Analysis",
+    "section": "Looking at the data",
+    "text": "Looking at the data\nFirst, I looked at the first few rows of the dataset to understand what variables are available.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\npenguins |&gt;\n  head()\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "posts/R/index.html#number-of-penguins-by-species",
+    "href": "posts/R/index.html#number-of-penguins-by-species",
+    "title": "R Analysis",
+    "section": "Number of penguins by species",
+    "text": "Number of penguins by species\nNext, I counted the penguins by species\n\nspecies_counts &lt;- penguins |&gt;\n  count(species, sort = TRUE)\n\nspecies_counts\n\n# A tibble: 3 × 2\n  species       n\n  &lt;fct&gt;     &lt;int&gt;\n1 Adelie      152\n2 Gentoo      124\n3 Chinstrap    68\n\n\nThe results show that Adelie penguins have the most observations in the dataset, followed by Gentoo and Chinstrap penguins."
+  },
+  {
+    "objectID": "posts/R/index.html#average-body-mass-by-species",
+    "href": "posts/R/index.html#average-body-mass-by-species",
+    "title": "R Analysis",
+    "section": "Average body mass by species",
+    "text": "Average body mass by species\nThen, I looked into average body mass of penguins by species\n\naverage_mass &lt;- penguins |&gt;\n  group_by(species) |&gt;\n  summarise(average_body_mass = mean(body_mass_g, na.rm = TRUE)) |&gt;\n  arrange(desc(average_body_mass))\n\naverage_mass\n\n# A tibble: 3 × 2\n  species   average_body_mass\n  &lt;fct&gt;                 &lt;dbl&gt;\n1 Gentoo                5076.\n2 Chinstrap             3733.\n3 Adelie                3701.\n\n\nGentoo penguins have the highest average body mass, while Adelie penguins have the lowest average body mass."
+  },
+  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
@@ -82,26 +103,5 @@
     "title": "Python Analysis",
     "section": "Average body mass by species",
     "text": "Average body mass by species\nThen, I looked into average body mass of penguins by species\n\naverage_mass = (\n    penguins.groupby(\"species\")[\"body_mass_g\"]\n    .mean().sort_values(ascending= False).reset_index())\naverage_mass\n\n\n\n\n\n\n\n\nspecies\nbody_mass_g\n\n\n\n\n0\nGentoo\n5076.016260\n\n\n1\nChinstrap\n3733.088235\n\n\n2\nAdelie\n3700.662252\n\n\n\n\n\n\n\nGentoo penguins have the highest average body mass, while Adelie penguins have the lowest average body mass."
-  },
-  {
-    "objectID": "posts/R/index.html#looking-at-the-data",
-    "href": "posts/R/index.html#looking-at-the-data",
-    "title": "R Analysis",
-    "section": "Looking at the data",
-    "text": "Looking at the data\nFirst, I looked at the first few rows of the dataset to understand what variables are available.\n\nlibrary(palmerpenguins)\nlibrary(tidyverse)\npenguins |&gt;\n  head()\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "posts/R/index.html#number-of-penguins-by-species",
-    "href": "posts/R/index.html#number-of-penguins-by-species",
-    "title": "R Analysis",
-    "section": "Number of penguins by species",
-    "text": "Number of penguins by species\nNext, I counted the penguins by species\n\nspecies_counts &lt;- penguins |&gt;\n  count(species, sort = TRUE)\n\nspecies_counts\n\n# A tibble: 3 × 2\n  species       n\n  &lt;fct&gt;     &lt;int&gt;\n1 Adelie      152\n2 Gentoo      124\n3 Chinstrap    68\n\n\nThe results show that Adelie penguins have the most observations in the dataset, followed by Gentoo and Chinstrap penguins."
-  },
-  {
-    "objectID": "posts/R/index.html#average-body-mass-by-species",
-    "href": "posts/R/index.html#average-body-mass-by-species",
-    "title": "R Analysis",
-    "section": "Average body mass by species",
-    "text": "Average body mass by species\nThen, I looked into average body mass of penguins by species\n\naverage_mass &lt;- penguins |&gt;\n  group_by(species) |&gt;\n  summarise(average_body_mass = mean(body_mass_g, na.rm = TRUE)) |&gt;\n  arrange(desc(average_body_mass))\n\naverage_mass\n\n# A tibble: 3 × 2\n  species   average_body_mass\n  &lt;fct&gt;                 &lt;dbl&gt;\n1 Gentoo                5076.\n2 Chinstrap             3733.\n3 Adelie                3701.\n\n\nGentoo penguins have the highest average body mass, while Adelie penguins have the lowest average body mass."
   }
 ]
